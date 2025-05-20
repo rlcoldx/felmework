@@ -7,6 +7,7 @@ use Agencia\Close\Adapters\Twig\DayTranslate;
 use Agencia\Close\Adapters\Twig\MonthTranslate;
 use Agencia\Close\Adapters\Twig\FilterHash;
 use Agencia\Close\Helpers\String\Strings;
+use Agencia\Close\Helpers\Link\Url;
 use Twig\Environment;
 use Twig\Error\LoaderError;
 use Twig\Error\RuntimeError;
