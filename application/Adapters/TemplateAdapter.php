@@ -15,6 +15,8 @@ use Twig\Loader\FilesystemLoader;
 
 class TemplateAdapter
 {
+    private $twig;
+    
     public function __construct()
     {
         $loader = new FilesystemLoader('view');
@@ -41,7 +43,9 @@ class TemplateAdapter
         $this->twig->addGlobal('PATH', PATH);
         $this->twig->addGlobal('NAME', NAME);
         $this->twig->addGlobal('PRODUCTION', PRODUCTION);
+        $this->twig->addGlobal('getCurrentUrl', Url::getCurrentUrl());
         $this->twig->addGlobal('_session', $_SESSION);
+        $this->twig->addGlobal('_request', $_REQUEST);
         $this->twig->addGlobal('_post', $_POST);
         $this->twig->addGlobal('_get', $_GET);
         $this->twig->addGlobal('_cookie', $_COOKIE);
