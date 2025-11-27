@@ -4,10 +4,7 @@ use CoffeeCode\Router\Router;
 
 $router = new Router(DOMAIN);
 
-// PAGE HOME
-$router->namespace("Agencia\Close\Controllers\Home");
-$router->get("/", "HomeController:index");
-
+require_once 'routes/home/home.php';
 
 $router->dispatch();
 if ($router->error()) {

@@ -1,7 +1,10 @@
 <?php
 
-define('DOMAIN', 'http://localhost:8000');
-define('PATH', 'http://localhost:8000');
+define('DOMAIN', 'http://localhost');
+define('PATH', 'http://localhost');
+define('NAME', 'NOME DO SITE');
+define('PRODUCTION', false);
+define('BASE', 'nome-do-site');
 
 //// CONFIGURAÇÕES DO BANCO ########################
 define('HOST_MAIN', '');
